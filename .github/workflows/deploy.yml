@@ -28,10 +28,12 @@ jobs:
           mkdir -p build
           cp index.html build/
           cp -r src build/
+          cp -r public/* build/ 2>/dev/null || :
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/build
-          commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')" 
+          commit_message: "Deploy: $(date +'%Y-%m-%d %H:%M:%S')"
+          force_orphan: true 

@@ -1,70 +1,51 @@
-# Anonymous Feedback System
+# Club Feedback System
 
-A secure and anonymous feedback system for tech clubs to report inclusivity issues and discomfort during meetings.
+A secure and anonymous feedback system for clubs, built with HTML, CSS, and JavaScript.
 
 ## Features
 
 - Anonymous feedback submission
-- Optional email field with anonymization
-- Secure data storage
-- Admin dashboard for review
-- Modern, responsive UI
+- Secure email wrapping for follow-up communication
+- Category-based feedback organization
+- Severity and urgency tracking
+- Tag-based categorization
+- Real-time submission status
 
-## Tech Stack
-
-- Frontend: React.js, Bootstrap
-- Backend: Python Flask
-- Database: PostgreSQL
-- Security: TLS, data encryption
-- Deployment: Docker, GitHub Actions
-
-## Project Structure
-
-```
-anonymous_feedback/
-├── frontend/           # React frontend application
-├── backend/           # Flask backend application
-├── docker/           # Docker configuration files
-└── docs/             # Documentation
-```
-
-## Setup Instructions
+## Setup
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
-   # Frontend
    cd frontend
    npm install
-
-   # Backend
-   cd backend
-   pip install -r requirements.txt
    ```
-3. Configure environment variables
-4. Start the development servers:
+3. Start the development server:
    ```bash
-   # Frontend
-   cd frontend
    npm start
-
-   # Backend
-   cd backend
-   flask run
    ```
 
-## Security Features
+## Deployment
 
-- End-to-end encryption
-- Anonymous email handling
-- Secure data storage
-- Input validation and sanitization
-- Role-based access control
+The frontend is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+
+## Backend
+
+The backend is a Flask application that handles:
+- Feedback submission
+- Anonymous email wrapping
+- Status tracking
+
+## Security
+
+- All feedback is submitted anonymously
+- Email addresses are converted to secure hashes
+- No personal information is stored
+- HTTPS encryption for all communications
 
 ## Contributing
 
-Please read our contributing guidelines before submitting pull requests.
-
-## License
-
-MIT License 
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request 
