@@ -1,0 +1,12 @@
+{
+  "name": "club-feedback-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cp index.html build/index.html && cp -r src build/",
+    "start": "serve -s build"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+} 
